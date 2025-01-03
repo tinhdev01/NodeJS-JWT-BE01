@@ -14,5 +14,7 @@ const routerAPI = express.Router();
 // routerAPI.delete('/users', deleteUserAPI);
 
 
-
+routerAPI.get("/", (req, res) => {
+    return res.status(200).json("Hello Word")
+})
 module.exports = routerAPI; //export default
